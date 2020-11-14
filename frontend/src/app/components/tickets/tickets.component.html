@@ -1,0 +1,42 @@
+
+<!--In this page you could see all tickets -->
+<div class="container">
+    <h2>Tickets</h2>
+    <table class="table table-striped">
+      <thead>  
+        
+        <tr>
+          <th>Subject</th>
+          <th>Status</th>
+          <th>Date</th>
+          <th>+ Info</th>
+         
+        
+        </tr>
+      </thead> 
+      <tbody>
+        <tr *ngFor="let ticket of tickets">
+          
+          <td>{{ticket.subject}}</td>
+          <td>{{ticket.status}}</td>
+          <td>{{ticket.updated_at}}</td>
+    
+       
+          <td>
+
+            <a [routerLink]="['/ticket',ticket.id]" class="btn btn-secondary"> +Info </a>
+             </td>
+        </tr>
+
+
+      </tbody>
+
+        
+      </table>
+
+          
+</div>
+
+
+
+
