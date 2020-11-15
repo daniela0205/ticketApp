@@ -6,12 +6,19 @@ An API Restful was coding using Nodejs, it was also done using the MVC. In the M
 - The path to display a ticket is necessary to place the ticket identifier in the JSON object for example: http://localhost:3000/api/ticket/2
 
 The internal Nodejs server for this project is set to port 3000, but this is editable. This change can be made in the index.js of the project, changing the port in the port variable
+To run the backend use the command: npm start
+
 
 *Frontend:
 The frontend is done with the Angular framework.
-Basically, three components were created called tickets, details, and error.
+Basically, three components were created called home,tickets, details, and error.
+
+In the Home, could see the main page.
+
 In the ticket component, the configuration was made to show all the tickets of the backend API. By default it is shown in the default url: http://localhost:4200/
 
 In the details component, the configuration was carried out to show in detail each one of the tickets that are selected. To access it is by selecting the link of one of the tickets and another page is opened showing the detail, or you can also through the URL for example http://localhost:4200/ticket/1
 
 The Error component is to show page 404 when that page is not found or the connection work
+
+To run the frontend use the command: ng serve

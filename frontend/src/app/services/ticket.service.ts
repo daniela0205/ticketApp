@@ -5,8 +5,6 @@ import {Ticket} from '../models/ticket';
 import {Global} from './global';
 
 // here I applied the injection dependecy to define the differents service that will have the site
-
-
 @Injectable()
 export class TicketService{
     public url: string;
@@ -15,10 +13,6 @@ export class TicketService{
         private _http:HttpClient
     ){
         this.url = Global.url;
-    }
-
-    testService(){
-        return 'Angular Work!';
     }
   
     getTickets(): Observable<any>{

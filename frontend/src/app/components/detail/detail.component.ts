@@ -13,6 +13,7 @@ import {Global} from '../../services/global';
 export class DetailComponent implements OnInit {
   public url:string;
   public ticket: Ticket;
+  
 
   constructor(
     private _ticketService: TicketService,

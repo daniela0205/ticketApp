@@ -6,11 +6,18 @@ import { Routes, RouterModule } from '@angular/router';
 import { TicketsComponent } from './components/tickets/tickets.component';
 import { ErrorComponent } from './components/error/error.component';
 import { DetailComponent } from './components/detail/detail.component';
+import { HomeComponent } from './components/home/home.component';
+
+
 
 
 const routes: Routes = [  
     {
       path:'',
+      component:HomeComponent
+    },
+    {
+      path:'tickets',
       component:TicketsComponent
     },
     {

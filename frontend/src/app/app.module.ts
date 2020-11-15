@@ -8,6 +8,7 @@ import { TicketsComponent } from './components/tickets/tickets.component';
 import { ErrorComponent } from './components/error/error.component';
 import { DetailComponent } from './components/detail/detail.component';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
+import { HomeComponent } from './components/home/home.component';
 
 
 
@@ -16,7 +17,8 @@ import { NoopAnimationsModule } from '@angular/platform-browser/animations';
     AppComponent,
     TicketsComponent,
     ErrorComponent,
-    DetailComponent
+    DetailComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
